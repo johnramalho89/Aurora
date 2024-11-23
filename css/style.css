@@ -1,5 +1,5 @@
 :root{
-    --basicGreen:#3AB688;
+    --basicGreen:#5FC49E;
     --basicPurple:#6B2F83;
     --basicDarkGray:#282E2C;
     --basicLightGray:#DDDDDD;
@@ -9,9 +9,14 @@
 .green{color: var(--basicGreen);}
 .darkGray{color: var(--basicDarkGray);}
 .lightGray{color: var(--basicLightGray);}
-.shadow{box-shadow: 10px 9px 13px 0px rgba(0,0,0,0.18)
-}
+.shadow{box-shadow: 10px 9px 13px 0px rgba(0,0,0,0.18)}
+.gradiente{
+    background: rgb(0,0,0);
+    background: linear-gradient(357deg, rgba(0,0,0,0.3785889355742297) 0%, rgba(0,0,0,0) 41%, rgba(0,0,0,0) 63%, rgba(0,0,0,0.6811099439775911) 100%);}
+.radius{border-radius: 15px;}
+.margin-top-20{margin-top: 20px;}
 .font-14{font-size: 14px;}
+.font-16{font-size: 16px;}
 
 * {
     padding: 0px;
@@ -37,6 +42,8 @@ header{
     align-items: center;
 }
 
+.logo{padding-left: 15px;}
+
 header nav ul{
     display: flex;
     flex-direction: row;
@@ -56,12 +63,21 @@ main{
     flex-direction: row;
 }
 
-.nav {flex: 1;border-radius: 30px 0px 0px 30px;background-image: url('../images/layout/fundo_nav.jpg');
+
+button{
+    background-color: var(--basicDarkGray);color: #fff;padding: 15px;border: none;margin-top: 30px;
+}
+.inLogin{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+}
+.nav {width: 325px;border-radius: 15px 0px 0px 15px;background-image: url('../images/layout/fundo_nav.jpg');
     background-size: auto 100%; background-position: top;
 }
-.content{flex: 6;background-color: #fff;border-radius: 0px 30px 30px 0px;}
+.content{flex: 6;background-color: #fff;border-radius: 0px 15px 15px 0px;}
 .textHome{
-    padding: 150px 150px 75px 150px;
+    padding: 150px 150px 50px 150px;
 }
 
 .coursesHome{
@@ -71,7 +87,13 @@ main{
     padding: 30px 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
 }
+
+.blCourseImg{height: 250px;}
+.listCourses .label{padding: 20px;background-color: var(--basicLightGray);border-radius:0px 0px 10px 10px;}
+.listCourses .ratedPriceCourses{display: flex;justify-content: space-between;align-items: center;}
+.blCourseImg img{width: 100%;height: 250px;border-radius: 10px 10px 0px 0px;}
 
 
 .textHome h1 {
@@ -81,13 +103,20 @@ main{
 
 .depoimentsHome{
  background-color: var(--basicDarkGray);
- padding: 0px 150px 75px 150px;
+ padding: 75px 150px 75px 150px;
 
 }
 .metodologyHome{
  background-color: var(--basicLightGray);
- padding: 0px 150px 75px 150px;
+ padding: 75px 150px 75px 150px;
 
 }
 
-h2{font-size:3rem;}
+h2{font-size:3rem;line-height:2rem;margin-bottom:20px;}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+
+}
