@@ -25,13 +25,14 @@
 
 html,body{
     height: 100vh;
+    padding: 0;
+    margin: 0;
+
 }
 
 body {
     background-image: url('../images/layout/background_1.jpg');
-    background-size: 100%;
-    padding: 30px;   
-    
+    background-size: 100%;   
 }
 
 header{
@@ -49,6 +50,7 @@ header nav ul{
     flex-direction: row;
     gap: 20px;
     padding: 0px 20px;
+    box-sizing: border-box;
 }
 
 header nav ul li {
@@ -57,10 +59,21 @@ header nav ul li {
     font-size: 18px;
 }
 
+#content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    
+   
+}
 main{
     width: 100%;    
     display: flex;
     flex-direction: row;
+    min-height: 100%;
+    max-height: auto;
 }
 
 
@@ -76,6 +89,10 @@ button{
     background-size: auto 100%; background-position: top;
 }
 .content{flex: 6;background-color: #fff;border-radius: 0px 15px 15px 0px;}
+.contentlogin{background-image: url('../images/layout/fundo_nav.jpg');background-size: 100%;   ;display: flex;justify-content: center;align-items: center;border-radius: 15px;height:auto;width: 100%;}
+.contentlogin .login{
+    background-color: #fff;height: 250px;width: 250px;border-radius: 10px;
+}
 .textHome{
     padding: 150px 150px 50px 150px;
 }
@@ -83,13 +100,12 @@ button{
 .coursesHome{
     padding: 0px 150px 75px 150px;
 }
-.listCourses{
-    padding: 30px 0px;
+.listCourses {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
+    padding: 30px 0;
 }
-
 .blCourseImg{height: 250px;}
 .listCourses .label{padding: 20px;background-color: var(--basicLightGray);border-radius:0px 0px 10px 10px;}
 .listCourses .ratedPriceCourses{display: flex;justify-content: space-between;align-items: center;}
@@ -114,9 +130,12 @@ button{
 
 h2{font-size:3rem;line-height:2rem;margin-bottom:20px;}
 
-footer{
+footer {
     padding: 20px;
     text-align: center;
     color: #fff;
-
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
