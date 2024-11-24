@@ -2,21 +2,29 @@
     --basicGreen:#5FC49E;
     --basicPurple:#6B2F83;
     --basicDarkGray:#282E2C;
+    --basicH2Gray:#4B4B4B;
     --basicLightGray:#DDDDDD;
+    --basicMediumGray:#BEBEBE;
+    --basicPGray:#636363;
 }
 
 .purple{color: var(--basicPurple);}
 .green{color: var(--basicGreen);}
 .darkGray{color: var(--basicDarkGray);}
+.dark2Gray{color: var(--basicH2Gray);}
 .lightGray{color: var(--basicLightGray);}
+.mediumGray{color: var(--basicMediumGray);}
 .shadow{box-shadow: 10px 9px 13px 0px rgba(0,0,0,0.18)}
 .gradiente{
     background: rgb(0,0,0);
-    background: linear-gradient(357deg, rgba(0,0,0,0.3785889355742297) 0%, rgba(0,0,0,0) 41%, rgba(0,0,0,0) 63%, rgba(0,0,0,0.6811099439775911) 100%);}
+    background: linear-gradient(357deg, rgba(0,0,0,0.5746673669467788) 0%, rgba(0,0,0,0.08167016806722693) 46%, rgba(0,0,0,0.09287464985994398) 48%, rgba(0,0,0,0.7147233893557423) 82%);}
 .radius{border-radius: 15px;}
 .margin-top-20{margin-top: 20px;}
 .font-14{font-size: 14px;}
 .font-16{font-size: 16px;}
+hr {
+    border: 0.4 !important;
+}
 
 * {
     padding: 0px;
@@ -83,11 +91,54 @@ main{
 
 }
 
+
+
+
+.navGeral ul li a{
+    color: #fff;
+    text-decoration: none;
+}
 .inLogin{
     width: 100%;
     height: 100%;
     border-radius: 15px 0px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+
 }
+
+.inLogin header{
+
+    padding: 10px 0px;
+    justify-content: left;
+    gap: 15px;
+    color: #fff;
+    
+}
+
+.inLogin header span{font-size: 12px;}
+
+.inLogin ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.inLogin ul li{
+    list-style: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.inLogin ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
 button{
     background-color: var(--basicDarkGray);color: #fff;padding: 15px;border: none;margin-top: 30px;
 }
@@ -96,10 +147,156 @@ button{
     background-size: auto 100%; background-position: top;
 }
 .content{flex: 6;background-color: #fff;border-radius: 0px 15px 15px 0px;}
-.contentlogin{background-image: url('../images/layout/fundo_nav.jpg');background-size: 100%;   ;display: flex;justify-content: center;align-items: center;border-radius: 15px;height:auto;width: 100%;}
-.contentlogin .login{
-    background-color: #fff;height: 250px;width: 250px;border-radius: 10px;
+
+/* Cursos Logado */
+.contentCoursesLogged {
+    background-color: #fff;
+    padding: 30px;   
+    box-sizing: border-box;  
+    border-radius: 0px 15px 15px 0px;
+    width: 100%;
+    min-height: 100%; /* Cresce dinamicamente */
 }
+
+.coursesGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ajusta dinamicamente */
+    gap: 20px; /* Espaço entre os itens */
+    padding: 20px 0px;
+    box-sizing: border-box; /* Garante que padding seja incluído */
+}
+
+.courseItem {
+    background-color: var(--basicDarkGray);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 35vh; /* Altura mínima de 50% da altura da viewport */
+
+}
+
+.courseItem h2 {
+    font-size: 1.5rem;
+    margin: 10px 0px 0px 0px;
+    color: #fff;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.courseItem p {
+    font-size: 0.8rem;
+    color: #fff;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.titleLogged{
+    display: flex;justify-content: space-between;align-items: center;margin: 0px;
+}
+
+/* Cursos Logado */
+
+
+/* Conteudo do Curso, pagina do curso */
+.coursesContent{
+    
+}
+
+.coursesContent p{
+    font-size: 12px;
+    margin: 10px 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--basicPGray);
+}
+.coursesContent h2{
+    font-size: 24px;
+    margin: 10px 0px;
+    color: var(--basicH2Gray);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.coursesRoute{
+    
+    border-left: 1px solid #999;padding-left: 20px;
+    
+    
+}
+.coursesRoute h3{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--basicH2Gray);
+}
+.coursesRoute p{
+    margin-left: 15px;
+}
+/* Conteudo do Curso, pagina do curso */
+
+/* Login */
+.contentlogin{background-image: url('../images/layout/fundo_nav.jpg');background-size: 100%; display: flex;justify-content: center;align-items: center;flex-direction: column;border-radius: 15px;height:auto;width: 100%;}
+.contentlogin .login{
+    background-color: #fff;
+    height: 320px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 30px;
+}
+.contentlogin h2{color: #fff;font-size: 24px;}
+ .form-group{
+    display: flex;flex-direction: column;
+    margin-bottom: 15px;
+ }
+
+ form label{
+    font-size: 18px;
+    color:var(--basicDarkGray);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+ } 
+
+ form button{
+    background-color: var(--basicDarkGray);
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 5px;
+ }
+
+ input{
+    padding: 15px;
+    background-color: #D9D9D9;
+    border: 1px solid #BEBEBE;
+    border-radius: 5px;
+ }
+
+ .contentlogin p{
+    text-align: center;
+    padding-top: 15px;
+
+ } 
+
+/* Login */
 .textHome{
     padding: 150px 150px 50px 150px;
 }
