@@ -6,9 +6,11 @@
     --basicLightGray:#DDDDDD;
     --basicMediumGray:#BEBEBE;
     --basicPGray:#636363;
+    --basicYellow:#BBA866;
 }
 
 .purple{color: var(--basicPurple);}
+.yellow{color: var(--basicYellow) !important;}
 .green{color: var(--basicGreen);}
 .darkGray{color: var(--basicDarkGray);}
 .dark2Gray{color: var(--basicH2Gray);}
@@ -200,7 +202,11 @@ button{
 }
 
 .titleLogged{
-    display: flex;justify-content: space-between;align-items: center;margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 8px 0px;
+    padding: 10px 0px;
 }
 
 /* Cursos Logado */
@@ -231,19 +237,67 @@ button{
 
 .coursesRoute{
     
-    border-left: 1px solid #999;padding-left: 20px;
+    border-left: 1px solid #999;
+    padding-left: 20px;
+    margin: 15px 0px 0px 5px;
     
     
 }
 .coursesRoute h3{
-    font-size: 16px;
+
+    list-style: circle;
+}
+
+.coursesRoute ul{
+    margin-left: -6px;
+}
+.coursesRoute ul li{
+    font-size: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
     color: var(--basicH2Gray);
+    list-style-position:initial;
+
 }
+
+.circlePurple{
+    list-style-image: url('../images/layout/elipsePurple.png');
+
+}
+.circleGray{
+    list-style-image: url('../images/layout/elipseGray.png');
+
+}
+.circleGreen{
+    list-style-image: url('../images/layout/elipseGreen.png');
+
+}
+
 .coursesRoute p{
     margin-left: 15px;
+}
+
+.conteudoTopico{
+    padding: 15px 0px;
+}
+.conteudoTopico h2{
+    font-size: 18px;
+}
+
+.conteudoTopico p{
+    margin: 10px 0px;
+}
+
+.conteudoTopico ul {
+    padding-left: 15px;
+}
+
+.conteudoTopico ul li
+{
+list-style: none;
+line-height: 35px;
+
 }
 /* Conteudo do Curso, pagina do curso */
 
