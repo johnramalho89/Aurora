@@ -200,6 +200,11 @@ button{
     font-style: normal;
 }
 
+.courseItem a{
+    color: #fff;
+    text-decoration: none;
+}
+
 .titleLogged{
     display: flex;
     justify-content: space-between;
@@ -326,7 +331,7 @@ table, tr, td {
 
 }
 .coursesList table tr td{
-    	padding: 15px;
+    	padding: 10px;
        
 
 }
@@ -458,6 +463,58 @@ table, tr, td {
 }
 
 h2{font-size:3rem;line-height:2rem;margin-bottom:20px;}
+
+/* Depoimento */
+.blsSteptoStep {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.blsSteptoStep>* {
+    background-color: #252B29;
+    padding: 40PX;
+    border-radius: 20px;
+
+}
+
+.blsSteptoStep H2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.blsSteptoStep p {
+    color: var(--basicLightGray);
+    opacity: 0.5;
+}
+
+.blsSteptoStep {
+    counter-reset: section-counter;
+    /* Inicializa o contador */
+}
+
+.circleNum::before {
+    counter-increment: section-counter;
+    /* Incrementa o contador para cada elemento */
+    content: counter(section-counter);
+    /* Define o conteúdo como o valor do contador */
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: none;
+    color: #fff;
+    text-align: center;
+    margin-right: 5px;
+    border: 2px solid #fff;
+    margin-top: 20px;
+}
+
+/* funcionamento */
+/* Depoimento */
 
 footer {
     padding: 20px 0px 0px 0px;
