@@ -304,6 +304,74 @@ line-height: 35px;
 }
 /* Conteudo do Curso, pagina do curso */
 
+
+/* Lista */
+.coursesList{
+    
+}
+table, tr, td {
+    
+    border-collapse: collapse;
+    }
+.coursesList table{
+    width: 100%;
+    margin-top: 25px;
+
+}
+
+.coursesList tr {
+    border-left: 4px solid var(--basicGreen);
+    border-bottom: 4px solid #fff;
+    background-color:#F4F4F4;
+
+}
+.coursesList table tr td{
+    	padding: 15px;
+       
+
+}
+
+.coursesList .rotulo{
+    font-weight: 600;
+    font-size: 11px;
+    font-family: "Poppins", sans-serif;
+    color:var(--basicMediumGray);
+    margin: 0px;
+    line-height: 10px;
+
+}
+
+.coursesList .text{
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color:var(--basicDarkGray);
+    margin: 0px;
+    line-height: 24px;
+
+}
+
+.coursesList .number{
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color:var(--basicMediumGray);
+    margin: 0px;
+    line-height: 24px;
+
+}
+
+.coursesList .textlight{
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color:var(--basicDarkGray);
+    margin: 0px;
+    line-height: 24px;
+
+}
+/* Lista */
+
 /* Login */
 .contentlogin{background-image: url('../images/layout/fundo_nav.jpg');background-size: 100%; display: flex;justify-content: center;align-items: center;flex-direction: column;border-radius: 15px;height:auto;width: 100%;}
 .contentlogin .login{
